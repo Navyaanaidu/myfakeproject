@@ -1,0 +1,28 @@
+<div class="main">
+  <p>helooooooo world</p>
+</div>
+
+<div>
+  
+  
+</div>
+
+<div class="exo">
+<form #f="ngForm" (ngSubmit)="show(f)">
+  <!-- <input type="text" name="aa" id="aa"> -->
+  <input type="text" class="form-control" id="name"
+  required
+  [(ngModel)]="model.name" name="name"
+  #name="ngModel">
+
+  <input type="email" class="form-control" id="email"
+  required
+  [(ngModel)]="model.email" name="email"
+  #Phone="ngModel">
+
+  <input type="phone" class="form-control" id="phone"
+  required
+  [(ngModel)]="model.phone" name="phone"
+  #name="ngModel">
+<button type="submit">submit</button>
+</form></div>
